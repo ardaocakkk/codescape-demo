@@ -11,6 +11,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 div#main {
@@ -123,3 +125,13 @@ img.socialIcon {
   width: 30px;
   height: 30px;
 }
+
+@keyframes slideInLeft{
+  0%{
+    transform: translate(-100%);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
